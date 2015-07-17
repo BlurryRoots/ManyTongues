@@ -21,7 +21,8 @@ class Zoundex():
         l = len(code)
         i = 0
         for c in code:
-            if ((i + 1) < l) and (code[i] != code[i + 1]):
+            if (((i + 1) < l) and (code[i] != code[i + 1])
+                or (i + 1) == l):
                 reduced_code = reduced_code + c
             i = i + 1
 
