@@ -43,8 +43,9 @@ return setmetatable ({}, {
 
 		local reduced_code = ''
 		string_foreach (code, function (i, c)
-			if i + 1 <= #code
-			and string_at (code, i) ~= string_at (code, i + 1)
+			if (i + 1 <= #code
+				and string_at (code, i) ~= string_at (code, i + 1))
+			or (i + 1) == #code
 			then
 				reduced_code = reduced_code .. c
 			end

@@ -13,6 +13,8 @@ function main ()
 
 	assert_equal ('L126', Zoundex ('lovecraft').encoded)
 	assert_equal ('L126', Zoundex ('loafkraft').encoded)
+
+	print ("test successful")
 end
 
 main ()
