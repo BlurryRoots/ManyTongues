@@ -1,3 +1,4 @@
 fortran/zoundx
 python/__pycache__
 python/*.pyc
+scheme/soundex
