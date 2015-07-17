@@ -1,7 +1,9 @@
+name=zoundex
+
 all: build run
 
 build:
-	csc soundex.scm
+	csc $(name).scm
 
 run:
-	./soundex
+	./$(name)
